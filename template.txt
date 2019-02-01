@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BAND NAME HERE</title>
+		
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<style>
+			body {
+					margin-top: 0%;
+					margin-bottom: 0%;
+					margin-left: 0%;
+					margin-right: 0%;
+					font-weight: bold;
+					background-image: url("https://i.pinimg.com/originals/52/b2/f0/52b2f017cb70aead900d06a78e728d5e.jpg");
+					background-size: 100%;
+				}
+			<div> <!-- NAVIGATION -->
+				div.nav ul {
+					list-style: none;
+					padding: 0;
+					background: #4f4763;
+				}
+				div.nav ul li {
+					display: block;
+					float: left;
+					background: #4f4763;
+					padding-top: 0.5%;
+					padding-bottom: 0.5%;
+					
+				}
+				div.nav li ul { display: none; }
+				div.nav ul li a {
+					display: block;
+					padding: 1em;
+					text-decoration: none;
+					white-space: nowrap;
+					color: #fff;
+					font-size: 110%;
+					position: center;
+				}
+				div.nav ul li a:hover { background: #c5d2e8; }
+				div.nav li:hover > ul {
+					display: block;
+					position: absolute;
+				}
+				div.nav li:hover li { float: none; }
+				div.nav li:hover a { background: #4f4763; background-color: #FFFFF; }
+				div.nav li:hover li a:hover { background: #c5d2e8; }
+				div.nav .main-navigation li ul li { border-top: 0; }
+				div.nav ul ul ul {
+					left: 100%;
+					top: 0;
+				}
+				div.nav ul:before,
+				div.nav ul:after {
+					content: "";
+					display: table;
+				}
+				div.nav ul:after { clear: both; }
+				div.nav ul li ul li ul {margin-top: 5px;}
+				div.nav ul li ul li ul li.second {margin-left: 5px;}
+				div.nav {
+					margin-top: 1%;
+					margin-bottom: 2%;
+					margin-left: 5%;
+					margin-right: 5%;
+					background-color: #4f4763;
+					opacity: 0.8;
+					filter: Alpha(opacity=80);
+					width: 90%;
+					border-radius: 10px;
+				}
+				div.navtable{
+					display: table;
+					margin: 0 auto;
+				}
+			</div>
+		</style>
+		<script>
+		
+		</script>
+	</head>
+	
+	<body>
+		<div class="mainbody">
+			<div class="nav">
+				<nav>
+					<div class="main">
+						<div class="navtable">
+							<ul class="main-navigation">
+								<li>
+									<a href="./index.html">Home</a>
+								</li>
+								<li>
+									<a href="./index.html">Music</a>
+								</li>
+								<li>
+									<a href="./index.html">Tour & Tickets</a>
+								</li>
+								<li>
+									<a href="./index.html">Merchandise</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+			</div>
+			
+			</div>
+		</div>
+	</body>
+</html>  
