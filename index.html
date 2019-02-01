@@ -15,20 +15,26 @@
 					margin-left: 0%;
 					margin-right: 0%;
 					font-weight: bold;
-					background-image: url("https://i.pinimg.com/originals/52/b2/f0/52b2f017cb70aead900d06a78e728d5e.jpg");
-					background-size: 100%;
+					background: url("https://i.pinimg.com/originals/52/b2/f0/52b2f017cb70aead900d06a78e728d5e.jpg") no-repeat center center fixed;
 				}
 				
 			@font-face{
 					font-family: titlefont;
-					src: url(fonts/SFAlienEncounters.ttf)
+					src: url(fonts/SFAlienEncountersSolid.ttf);
+			}
+			@font-face{
+					font-family: smallfont;
+					src: url(fonts/VCR_OSD_MONO_1.001.ttf);
+			}
+			#smallfont{
+					font-family: smallfont;
 			}
 			#titlefont{
 					font-family: titlefont;
 			}
 				
 			#title {
-					color: #ff66ff;
+					color: #ffffff;
 					text-align: center;
 					font-family: titlefont;
 					font-size: 100px;
@@ -37,7 +43,7 @@
 			.musicbutton {
 					color: white;
 					background-color: #ff66ff;
-					border: 2px solid white;
+					border: 10% solid white;
 			}
 			.musicbutton:hover{
 					background-color: white;
@@ -113,7 +119,7 @@
 					margin-left: 0%;
 					margin-right: 0%;
 					background-color: #990099;
-					opacity: 0.75;
+					opacity: 0.95;
 					filter: Alpha(opacity=90);
 					width: 100%;
 					border-radius: 01px;
@@ -155,7 +161,7 @@
 			</div>
 			<div style="text-align: center;">
 				<h1 id="title"> NEW WAVE MUSIC</h1>
-				<button class=" genbutton musicbutton">Listen to the latest album</button>
+				<button style="font-size: 200%; font-family: smallfont;"class="genbutton musicbutton">Listen to the latest album</button>
 			</div>
 		</div>
 	</body>
