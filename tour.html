@@ -29,7 +29,8 @@
 			#smallfont{
 					font-family: smallfont;
 					text-align: center;
-					color: #ffffff;
+					color: black;
+					color: black;
 			}
 			.textbackground{
 					background-color: #ffca51;
@@ -74,6 +75,85 @@
 					transition-duration: 0.4s;
 					cursor: pointer;
 					border-radius: 0%;
+				}
+				* {box-sizing: border-box;}
+				ul {list-style-type: none;}
+				body {font-family: Verdana, sans-serif;}
+
+				.month {
+				  padding: 70px 25px;
+				  width: 100%;
+				  background: #b2b2b2;
+				  text-align: center;
+				}
+
+				.month ul {
+				  margin: 0;
+				  padding: 0;
+				}
+
+				.month ul li {
+				  color: black;
+				  font-size: 20px;
+				  text-transform: uppercase;
+				  letter-spacing: 3px;
+				}
+
+				.month .prev {
+				  float: left;
+				  padding-top: 10px;
+				}
+
+				.month .next {
+				  float: right;
+				  padding-top: 10px;
+				}
+
+				.weekdays {
+				  margin: 0;
+				  padding: 10px 0;
+				  background-color: #ddd;
+				}
+
+				.weekdays li {
+				  display: inline-block;
+				  width: 13.6%;
+				  color: #666;
+				  text-align: center;
+				}
+
+				.days {
+				  padding: 10px 0;
+				  background: #eee;
+				  margin: 0;
+				}
+
+				.days li {
+				  list-style-type: none;
+				  display: inline-block;
+				  width: 13.6%;
+				  text-align: center;
+				  margin-bottom: 5px;
+				  font-size:12px;
+				  color: #777;
+				}
+
+				.days li .active {
+				  padding: 5px;
+				  background: #ffca51;
+				  color: white !important
+				}
+				@media screen and (max-width:720px) {
+				  .weekdays li, .days li {width: 13.1%;}
+				}
+
+				@media screen and (max-width: 420px) {
+				  .weekdays li, .days li {width: 12.5%;}
+				  .days li .active {padding: 2px;}
+				}
+
+				@media screen and (max-width: 290px) {
+				  .weekdays li, .days li {width: 12.2%;}
 				}
 			<div> <!-- NAVIGATION -->
 				div.nav ul {
@@ -177,17 +257,75 @@
 			</div>
 			<div class="textbackground">
 				<br>
-				<h1 id="smallfont" style="font-family:titlefont;font-size:300%;">Music</h1>
+				<h1 id="smallfont" style="font-family:titlefont;font-size:300%;">Tour and Tickets</h1>
 				<br>
-				<h2 id="smallfont" style="font-size:150%;">Find New Wave Music's new albums, singles and hit tracks on <a href="https://www.apple.com/itunes/">iTunes</a>, <a href="https://www.apple.com/music/">Apple Music</a>, <a href="https://www.spotify.com/us/">Spotify</a>, and <a href="https://soundcloud.com/">Soundcloud</a></h2>
-				<br><br>
-				<center>
-				<a href="https://www.apple.com/itunes/"><img align="middle" class="center" style="width:10%;height:10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/ITunes_logo.svg/500px-ITunes_logo.svg.png"></a>
-				<a href="https://www.apple.com/music/"><img align="middle" class="center" style="width:10%;height:10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/2000px-Apple_logo_black.svg.png">
-				<a href="https://www.spotify.com/us/"><img align="middle" class="center" style="width:10%;height:10%;" src="https://antidote71.com/wp-content/uploads/2018/11/spotify-logo.png"></a>
-				<a href="https://soundcloud.com/"><img align="middle" class="center" style="width:10%;height:10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Antu_soundcloud.svg/2000px-Antu_soundcloud.svg.png"></a>
-				</center>
-				<br><br><br><br><br>
+				<h2 id="smallfont" style="font-size:150%;">New Wave Music Tour, 'The New Wave' begins on March 1st, 2020. Tickets go on sale August of 2019.</h2>
+				<br>
+				<div class="month">      
+					<ul>
+						<li class="prev">&#10094;</li>
+						<li class="next">&#10095;</li>
+						<li>
+							March<br>
+							<span style="font-size:18px">2020</span>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="weekdays">
+				  <li>Mo</li>
+				  <li>Tu</li>
+				  <li>We</li>
+				  <li>Th</li>
+				  <li>Fr</li>
+				  <li>Sa</li>
+				  <li>Su</li>
+				</ul>
+
+				<ul class="days">  
+				  <li><span class="active">1</span></li>
+				  <li>2</li>
+				  <li>3</li>
+				  <li><span class="active">4</span></li>
+				  <li>5</li>
+				  <li>6</li>
+				  <li>7</li>
+				  <li>8</li>
+				  <li><span class="active">9</span></li>
+				  <li>10</li>
+				  <li><span class="active">11</span></li>
+				  <li>12</li>
+				  <li>13</li>
+				  <li>14</li>
+				  <li><span class="active">15</span></li>
+				  <li>16</li>
+				  <li>17</li>
+				  <li>18</li>
+				  <li><span class="active">19</span></li>
+				  <li>20</li>
+				  <li>21</li>
+				  <li><span class="active">22</span></li>
+				  <li>23</li>
+				  <li><span class="active">24</span></li>
+				  <li>25</li>
+				  <li>26</li>
+				  <li><span class="active">27</span></li>
+				  <li>28</li>
+				  <li>29</li>
+				  <li><span class="active">30</span></li>
+				  <li>31</li>
+				</ul>
+				<h2 id="smallfont" style="font-size:150%;">Locations and Dates</h2>
+				<p id="smallfont" style="font-size:120%;">Boston - March 1st</p>
+				<p id="smallfont" style="font-size:120%;">Toronto, CA - March 4th</p>
+				<p id="smallfont" style="font-size:120%;">New York City - March 9th</p>
+				<p id="smallfont" style="font-size:120%;">Philadelphia - March 11th</p>
+				<p id="smallfont" style="font-size:120%;">Louisville - March 15th</p>
+				<p id="smallfont" style="font-size:120%;">Kansas City- March 19th</p>
+				<p id="smallfont" style="font-size:120%;">Denver - March 22nd</p>
+				<p id="smallfont" style="font-size:120%;">Las Vegas - March 24th</p>
+				<p id="smallfont" style="font-size:120%;">Phoenix - March 27th</p>
+				<p id="smallfont" style="font-size:120%;">Los Angeles - March 30th</p>
 			</div>
 		</div>
 	</body>
